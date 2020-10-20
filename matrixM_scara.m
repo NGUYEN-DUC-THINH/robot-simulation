@@ -1,0 +1,4 @@
+function M=matrixM_scara(q)
+global m1 m2 m3 m4 a1 a2 q3max d4 gr;
+q1=q(1);q2=q(2);q3=q(3);q4=q(4);
+M=[a2 ^ 2 * m3 + a2 ^ 2 * m4 + 0.2e1 * a1 * a2 * m4 * cos(q2) + 0.2e1 * a1 * a2 * m3 * cos(q2) + m2 * a2 * a1 * cos(q2) + a1 ^ 2 * m4 + a1 ^ 2 * m3 + a1 ^ 2 * m2 + a1 ^ 2 * m1 / 0.3e1 + a2 ^ 2 * m2 / 0.3e1 a2 ^ 2 * m3 + a2 ^ 2 * m4 + a1 * a2 * m4 * cos(q2) + a1 * a2 * m3 * cos(q2) + m2 * a2 * a1 * cos(q2) / 0.2e1 + a2 ^ 2 * m2 / 0.3e1 0 0; a2 ^ 2 * m3 + a2 ^ 2 * m4 + a1 * a2 * m4 * cos(q2) + a1 * a2 * m3 * cos(q2) + m2 * a2 * a1 * cos(q2) / 0.2e1 + a2 ^ 2 * m2 / 0.3e1 a2 ^ 2 * m2 / 0.3e1 + a2 ^ 2 * m3 + a2 ^ 2 * m4 0 0; 0 0 m3 + m4 0; 0 0 0 0;];
